@@ -1,0 +1,130 @@
+.subscription-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.subscription-container h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.plans-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.plan-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+}
+
+.plan-card.recommended {
+  border: 2px solid #3498db;
+}
+
+.recommended-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: #3498db;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.plan-name {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.plan-price {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.plan-price span {
+  font-size: 1rem;
+  color: #666;
+}
+
+.features-list {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.features-list li {
+  margin-bottom: 1rem;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.check-icon {
+  color: #27ae60;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.subscribe-button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #2c3e50;
+  color: white;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.subscribe-button:hover {
+  background: #34495e;
+}
+
+.subscribe-button.recommended-btn {
+  background: #3498db;
+}
+
+.subscribe-button.recommended-btn:hover {
+  background: #2980b9;
+}
+
+.guarantee {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .subscription-container {
+    padding: 1rem;
+  }
+  
+  .plans-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .plan-card {
+    margin-bottom: 2rem;
+  }
+}

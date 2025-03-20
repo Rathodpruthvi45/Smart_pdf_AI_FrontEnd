@@ -1,0 +1,11 @@
+.admin-link {
+  background-color: #8e44ad;
+  color: white !important;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.admin-link:hover {
+  background-color: #9b59b6;
+} 
